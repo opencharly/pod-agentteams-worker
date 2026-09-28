@@ -20,7 +20,7 @@ runs rootless as the image user (uid 1000).
 |---|---|
 | Layer / candy | `agentteams-worker` |
 | Runtime | openclaw gateway + `agt` REST client + `mc` + shared protocol libs |
-| Service | `agentteams-worker` (spawned by the controller) |
+| Service | `agentteams-worker` (no network port; spawned by the controller) |
 | Requires | `layer-agentteams-openclaw`, `layer-agentteams-cli` |
 
 ## How to use it
