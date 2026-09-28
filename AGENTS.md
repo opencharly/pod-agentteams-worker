@@ -35,7 +35,12 @@ when that lands, add the owning skill here.
 ## Build / validate / test
 
 - `charly box validate` at the repo root — the structural check: the manifest
-  must parse and validate at the installed charly.
+  must parse and validate at the installed charly. NB: the repo's `charly.yml`
+  is still stamped `2026.249.2125` while the pinned charly requires
+  `2026.261.1747`, so the check currently stops at `Run: charly migrate`; that
+  is the org-wide 249→261 schema-stamp cutover, tracked as a named batch at
+  [opencharly/charly#633](https://github.com/opencharly/charly/issues/633),
+  not a defect of this repo. A docs-only change does not carry the migration.
 - The merge gate is the **org-wide** `charly/pr-validator` (required check
   `validate / validate`, defined in `opencharly/.github`); this repo has **no**
   per-repo candy gate. Its only workflow file is
