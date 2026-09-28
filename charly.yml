@@ -1,7 +1,5 @@
-version: 2026.232.0520
 agentteams-worker:
     candy:
-        version: 2026.224.0600
         description: |-
             The AgentTeams Worker agent image — the openclaw gateway runtime the
             controller spawns for every Worker CR. Composes the shared
